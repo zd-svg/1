@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра: Голосні та Приголосні</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Сортуй Літери!</h1>
+        <div class="score-timer">
+            <p>Рахунок: <span id="score">0</span></p>
+            <p>Час: <span id="timer">60</span> с</p>
+        </div>
+        
+        <button id="startButton">Почати Гру</button>
+
+        <div class="drop-area" id="dropArea">
+            </div>
+
+        <div class="baskets">
+            <div class="basket" id="vowelBasket">
+                <h2>Голосні</h2>
+                <p>(А, Е, И, І, О, У, Я, Ю, Є, Ї)</p>
+            </div>
+            <div class="basket" id="consonantBasket">
+                <h2>Приголосні</h2>
+                <p>(Б, В, Г, Д, Ж, З, ...)</p>
+            </div>
+        </div>
+
+        <div id="gameOverScreen" class="game-over-screen">
+            <h2>Гру Закінчено!</h2>
+            <p>Ваш рахунок: <span id="finalScore">0</span></p>
+            <button id="restartButton">Грати Ще Раз</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
